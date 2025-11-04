@@ -1,0 +1,177 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{url}
+\usepackage{parskip} 	
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\usepackage{supertabular}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{booktabs}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+\usepackage{fontawesome5}
+
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {}
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+\begin{document}
+\pagestyle{empty} 
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\vspace{-0.9em} 
+\Huge{SHUBHANG KUBER} \\[7.5pt]
+\href{https://github.com/Shubhang-Kuber}{\raisebox{-0.05\height}\faGithub\ Github} \ $|$ \ 
+\href{https://www.linkedin.com/in/shubhang-kuber/}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn} \ $|$ \  
+\href{mailto:shubhangkuber@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ shubhangkuber@gmail.com} \ $|$ \ 
+\href{tel:+919916577533}{\raisebox{-0.05\height}\faMobile \ +91 9945641105} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Languages:}&  \normalsize{C, C++, Java, Python, JavaScript, R, HTML, CSS}\\
+\textbf{Development}:&  \normalsize{React, Express, Next, Node}\\
+\textbf{AIML}:&  \normalsize{Hugging Face, Google Collab, JupyterNB, R-Studio, Kaggale, TAAFT, Openai Playground, Google AI Studio}\\
+\textbf{Database:}&  \normalsize{ MongoDB Compass}\\
+\textbf{Relevant Software:}&  \normalsize{Git, Github, VS Code, Gemini CLI, AWS, OCI, Lovable, Canva}\\
+\end{tabularx}
+\vspace{-0.9em} 
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Experience}
+
+\begin{joblong}{Visual Computing CoE Intern, \textit{ISE Dept}}{Aug 2025 - Oct 2025}
+    \item Developed an AI-powered financial news summarization system using \textbf{transformer-based NLP models}, automating article extraction and entity recognition for analysts.
+\item Designed an end-to-end static Python pipeline integrating \textbf{BeautifulSoup, spaCy, and Google Sheets API}, enabling real-time, structured financial insights with minimal latency.
+\end{joblong}
+\vspace{-1.1em}
+
+%----------------------------------------------------------------------------------------
+% PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\section{Projects}
+\vspace{0.6em}
+
+\vspace{0.6em}
+\vspace{0.6em}
+
+
+\begin{joblong}{LLM to Summarize Financial News}{\href{https://github.com/Shubhang-Kuber/LLM_to_Summarize_Financial_News}{View on GitHub}}
+    \item Developed an \textbf{LLM-driven NLP pipeline} leveraging transformer-based summarization (BART) and entity recognition (spaCy) to generate concise, high-context financial insights from raw news data.
+    \item Automated static end-to-end processing with \textbf{web scraping, summarization, and Google Sheets integration}, enabling real-time structured reporting for financial analytics..
+    \item \textbf{Tools and Technologies:} Python, Transformers (BART), spaCy, BeautifulSoup, Pandas, gspread, Google Sheets API, Google Colab.
+
+\end{joblong}
+\vspace{-1.9em}
+\vspace{0.6em}
+
+\vspace{0.6em}
+\vspace{0.6em}
+
+
+\begin{joblong}{Fakebuster}{\href{https://github.com/Shubhang-Kuber/Fakebuster}{View on GitHub}}
+    \item Developed an \textbf{AI-powered NLP model} using a hybrid \textbf{CNN-LSTM architecture} with pre-trained \textbf{GloVe embeddings} to classify news headlines and articles as True or Fake.
+    \item Implemented an end-to-end workflow for \textbf{text preprocessing, tokenization, label encoding, and predictive inference}, enabling real-time fake news detection with high accuracy.
+    \item \textbf{Tools and Technologies:} Python, TensorFlow, Keras, NumPy, Pandas, Scikit-learn, GloVe embeddings.
+
+\end{joblong}
+\vspace{-1.9em}
+\vspace{0.6em}
+
+\vspace{0.6em}
+\vspace{0.6em}
+
+
+\begin{joblong}{ChatterMind}{\href{https://github.com/Shubhang-Kuber/ChatterMind}{View on GitHub}}
+    \item Built a \textbf{rule-based chatbot} using \textbf{Python and NLTK}, simulating human-like conversations through pattern–response matching and regular expressions.  
+    \item Implemented predefined conversational flows, reflections, and context handling to enable natural dialogue and dynamic user interaction.  
+    \item \textbf{Tools and Technologies:} Python, NLTK, Regular Expressions (re module).  
+
+\end{joblong}
+\vspace{-0.9em}
+\clearpage
+
+
+\begin{joblong}{Sudarshan Chakra}
+{\href{https://github.com/Shubhang-Kuber/Sudarshan-Chakra}{View on GitHub} 
+
+\href{https://sudarshan-demo.netlify.app}{Live Demo}}
+
+    \item Built an embedded defense simulator with a 3D web UI, AI-driven voice/text control, and dual-radar displays (\textbf{0.1ms 2D, 5ms 3D}).
+    \item \textbf{Tools and Technologies:} React, Three.js, Node.js, Express, Socket.IO, MongoDB, Arduino, Flask, Chatterbox, Vercel, Render.
+\end{joblong}
+\vspace{-0.9em}
+
+\section{Organizational and Leadership Roles}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Roles:}&  \normalsize{Hackemon - CTF Prelims \& Finale \textbf{(Core Member)}}\\
+\end{tabularx}
+  
+\vspace{-0.8em} 
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2024 - 2028 & B.E. in Information Science \& Engineering \\
+& \textbf{R.V. College of Engineering} \hfill \normalsize (CGPA: 9.68 - 2nd Sem) \\ 
+\addlinespace
+2022 - 2024 & Pre-University Education \hfill 98.33\% (PCM) | COMEDK Rank: 436 | CET Rank: 1251\\
+\end{tabularx}
+\end{document}
