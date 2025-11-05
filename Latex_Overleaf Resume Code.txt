@@ -160,6 +160,29 @@
     \item \textbf{Tools and Technologies:} React, Three.js, Node.js, Express, Socket.IO, MongoDB, Arduino, Flask, Chatterbox, Vercel, Render.
 \end{joblong}
 \vspace{-0.9em}
+\vspace{0.6em}
+
+\section{Certifications and Courses}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Course-1:}&  \normalsize{Oracle Certified AI Foundations Associate}\\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Course-2:}&  \normalsize{C Programming for Beginners - Master the C Language}\\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Course-3:}&  \normalsize{Learn JAVA Programming - Beginner to Master}\\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Course-4:}&  \normalsize{Finlatics Equity Markets Analyst}\\
+\end{tabularx}
+  
+\vspace{-0.8em} 
+
+\vspace{0.6em}
+\vspace{0.6em}
 
 \section{Organizational and Leadership Roles}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
@@ -167,6 +190,9 @@
 \end{tabularx}
   
 \vspace{-0.8em} 
+
+\vspace{0.6em}
+\vspace{0.6em}
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
 2024 - 2028 & B.E. in Information Science \& Engineering \\
